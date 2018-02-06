@@ -1,0 +1,26 @@
+<ion-view view-title="Test">
+
+    <ion-nav-buttons side="secondary" class="bar-stable">
+        <h5 class="stable">{{userStatus}}</h5>
+    </ion-nav-buttons>
+
+    <ion-header-bar class="bar bar-subheader">
+        <div class="title">
+            <h1 class="title">Aciertos <span class="badge" ng-class="(validAnswers==0)? 'badge-assertive' : (validAnswers==preguntas.length)? 'badge-balanced' : 'badge-positive' ">{{validAnswers}}</span></h1>
+        </div>
+    </ion-header-bar>
+    <ion-content class="has-subheader">
+        <div class="row">
+            <div class="col">
+                <ion-list>
+                    <div class="card" ng-repeat="pregunta in preguntas">
+                        <div class="item item-wrap" ng-class="(pregunta.status == 'correct') ? 'item-balanced' : (pregunta.status == 'wrong' ? 'item-assertive' : '')">
+                            <h2 class="title" ng-class="(pregunta.status == 'correct') ? 'stable' : (pregunta.status == 'wrong' ? 'stable' : 'positive')">{{pregunta.text}}</h2>
+                        </div>
+                        <ion-radio name="radio-group-{{pregunta.id}}" class="item item-divider" ng-value="'A'" ng-repeat="respuesta in pregunta.answers" ng-click="validate(pregunta, respuesta.id)" ng-disabled="pregunta.status != null">{{respuesta.text}}</ion-radio>
+                    </div>
+                </ion-list>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

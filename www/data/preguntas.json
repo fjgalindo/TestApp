@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "text": "Esto es una pregunta 1",
+        "validAnswer": 1,
+        "userAnswer": null,
+        "status": null,
+        "answers": [
+            {
+                "id": 1,
+                "text": "Respuesta 1"
+            },
+            {
+                "id": 2,
+                "text": "Respuesta 2"
+            },
+            {
+                "id": 3,
+                "text": "Respuesta 3"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "text": "Esto es una pregunta 2",
+        "validAnswer": 2,
+        "userAnswer": null,
+        "status": null,
+        "answers": [
+            {
+                "id": 1,
+                "text": "Respuesta 1"
+            },
+            {
+                "id": 2,
+                "text": "Respuesta 2"
+            },
+            {
+                "id": 3,
+                "text": "Respuesta 3"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "text": "Esto es una pregunta 3",
+        "validAnswer": 3,
+        "userAnswer": null,
+        "status": null,
+        "answers": [
+            {
+                "id": 1,
+                "text": "Respuesta 1"
+            },
+            {
+                "id": 2,
+                "text": "Respuesta 2"
+            },
+            {
+                "id": 3,
+                "text": "Respuesta 3"
+            }
+        ]
+    }
+]

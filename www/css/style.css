@@ -1,1 +1,22 @@
 /* Empty. Add your own CSS if you like */
+.right{
+    text-align: right;
+}
+.left{
+    text-align: left;
+}
+.badge{
+    /*margin:0px 5px;*/
+}
+
+ion-content{
+    background-color: #e3e3e3;
+}
+
+ion-content.light{
+    background-color: #f4f4f4;
+}
+
+.center{
+    text-align: center;
+}

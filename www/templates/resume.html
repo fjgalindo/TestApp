@@ -1,0 +1,31 @@
+<ion-modal-view>
+    <ion-header-bar class="bar-positive">
+      <h1 class="title">Resultado</h1>
+    </ion-header-bar>
+    <ion-content class="light">
+        <div class="row">
+            <div class="col col-100 center">
+                <h4>Tu estado es: {{userStatus}}</h4>
+                <img src="img/userstatus/{{userStatus}}.gif" />
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col center">
+                <h3 class="title" ng-if="userStatus=='looser'">¡No acertaste ni una!</h3>
+                <h3 class="title" ng-if="userStatus=='poor'">Puedes hacerlo mejor...</h3>
+                <h3 class="title" ng-if="userStatus=='guru'">¡Perfecto!</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col center">
+                <h4 class="title">Aciertos <span class="badge" ng-class="(validAnswers==0)? 'badge-assertive' : (validAnswers==preguntas.length)? 'badge-balanced' : 'badge-positive' ">{{validAnswers}}</span></h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-offset-25 col-50 center">
+                <a href="#/test" ng-click="reset()" class="button button-block button-positive">Reiniciar test</a>
+            </div>
+        </div>
+    </ion-content>
+  </ion-modal-view>
