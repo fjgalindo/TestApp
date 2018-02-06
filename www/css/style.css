@@ -28,3 +28,7 @@ ion-content.light{
 .padding-0 {
     padding: 0px;
 }
+
+.col-100{
+    max-width: 100%;
+}
