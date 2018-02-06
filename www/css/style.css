@@ -20,3 +20,11 @@ ion-content.light{
 .center{
     text-align: center;
 }
+
+.question{
+    white-space: normal !important;
+}
+
+.padding-0 {
+    padding: 0px;
+}

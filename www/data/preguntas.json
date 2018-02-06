@@ -1,64 +1,68 @@
 [
     {
         "id": 1,
-        "text": "Esto es una pregunta 1",
+        "text": "¿Cómo declaramos en Java un atributo de una clase que solo pueda ser accedido desde la propia clase?",
         "validAnswer": 1,
         "userAnswer": null,
         "status": null,
         "answers": [
             {
                 "id": 1,
-                "text": "Respuesta 1"
+                "text": " Con 'private'"
             },
             {
                 "id": 2,
-                "text": "Respuesta 2"
+                "text": "Con 'public'"
             },
             {
                 "id": 3,
-                "text": "Respuesta 3"
+                "text": "Con mucho cariño"
+            },
+            {
+                "id": 3,
+                "text": "¡Eso no se puede hacer!"
             }
         ]
     },
     {
         "id": 2,
-        "text": "Esto es una pregunta 2",
+        "text": "¿Qué significan las siglas del patrón MVC?",
         "validAnswer": 2,
         "userAnswer": null,
         "status": null,
         "answers": [
             {
                 "id": 1,
-                "text": "Respuesta 1"
+                "text": "Modelo Vista Concurrente"
             },
             {
                 "id": 2,
-                "text": "Respuesta 2"
+                "text": " Modelo Vista Controlador"
             },
             {
                 "id": 3,
-                "text": "Respuesta 3"
+                "text": "Me Voy de Casa"
             }
         ]
     },
     {
         "id": 3,
-        "text": "Esto es una pregunta 3",
+        "text": "¿Quién es el mejor futbolista del mundo?",
         "validAnswer": 3,
         "userAnswer": null,
         "status": null,
         "answers": [
             {
                 "id": 1,
-                "text": "Respuesta 1"
+                "text": "Leo Messi (F.C. Barcelona)"
             },
             {
                 "id": 2,
-                "text": "Respuesta 2"
+                "text": "Cristiano Ronaldo (Real Madrid C.F.)"
             },
             {
                 "id": 3,
-                "text": "Respuesta 3"
+                "text": "Radamel Falcao (Atlético de Madrid)"
             }
         ]
     }

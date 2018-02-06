@@ -11,11 +11,11 @@
     </ion-header-bar>
     <ion-content class="has-subheader">
         <div class="row">
-            <div class="col">
+            <div class="col padding-0">
                 <ion-list>
                     <div class="card" ng-repeat="pregunta in preguntas">
                         <div class="item item-wrap" ng-class="(pregunta.status == 'correct') ? 'item-balanced' : (pregunta.status == 'wrong' ? 'item-assertive' : '')">
-                            <h2 class="title" ng-class="(pregunta.status == 'correct') ? 'stable' : (pregunta.status == 'wrong' ? 'stable' : 'positive')">{{pregunta.text}}</h2>
+                            <h2 class="question" ng-class="(pregunta.status == 'correct') ? 'stable' : (pregunta.status == 'wrong' ? 'stable' : 'positive')">{{pregunta.text}}</h2>
                         </div>
                         <ion-radio name="radio-group-{{pregunta.id}}" class="item item-divider" ng-value="'A'" ng-repeat="respuesta in pregunta.answers" ng-click="validate(pregunta, respuesta.id)" ng-disabled="pregunta.status != null">{{respuesta.text}}</ion-radio>
                     </div>
